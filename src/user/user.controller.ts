@@ -11,8 +11,8 @@ export class UserController extends BaseController implements IUserController {
 	constructor(@inject(TYPES.ILogger) private loggerService: LoggerService) {
 		super(loggerService);
 		this.bindRoutes([
-			{ path: 'registration', method: 'post', func: this.registration },
-			{ path: 'login', method: 'post', func: this.login },
+			{ path: '/registration', method: 'post', func: this.registration },
+			{ path: '/login', method: 'post', func: this.login },
 		]);
 	}
 
