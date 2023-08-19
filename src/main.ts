@@ -1,6 +1,6 @@
 import {App} from "./app";
 import {LoggerService} from "./logger/logger.service";
-import {UserController} from "./users/users.controller";
+import {UserController} from "./users/user.controller";
 
 async function bootstrap() {
     const logger = new LoggerService();
