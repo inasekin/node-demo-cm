@@ -12,8 +12,8 @@ import { IUserController } from './user/user.controller.interface';
 import { IConfigService } from './config/config.service.interface';
 import { ConfigService } from './config/config.service';
 import { PrismaService } from './db/prisma.service';
-import {IUserRepository} from "./user/user.repository.interface";
-import {UserRepository} from "./user/user.repository";
+import { IUserRepository } from './user/user.repository.interface';
+import { UserRepository } from './user/user.repository';
 
 interface IBootstrapReturn {
 	appContainer: Container;
@@ -40,4 +40,4 @@ function bootstrap(): IBootstrapReturn {
 	return { app, appContainer };
 }
 
-export const { app, appContainer } = bootstrap();
+export const boot = bootstrap();
